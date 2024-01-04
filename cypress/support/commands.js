@@ -22,8 +22,7 @@
 //
 //
 // -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
+// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })const loginPage = require("../fixtures/pages/loginPage.json");
 const loginPage = require("../fixtures/pages/loginPage.json");
 const generalElements = require("../fixtures/pages/general.json");
 

@@ -1,7 +1,9 @@
 {
-  "boxNameField": ":nth-child(1) > .frm",
-  "sixthIcon": ":nth-child(6) > .picture_svg_wrapper",
-  "giftPriceToggle": "input",
-  "maxAnount": ".MuiGrid-grid-xs-5 .frm",
-  "currency": ".MuiGrid-grid-xs-7 .frm"
-}
+    "boxNameField": ":nth-child(1) > .frm",
+    "sixthIcon": ":nth-child(6) > .picture_svg_wrapper",
+    "giftPriceToggle": ".form-card__main input[type=checkbox]", 
+    "checkAddress":"#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(2) > div.switch-panel__text > span.txt--med.txt",
+    "checkPhoneNumber": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > div.switch-panel__text > span.txt--med.txt",
+    "maxAnount": ".MuiGrid-grid-xs-5 .frm",
+    "currency": ".MuiGrid-grid-xs-7 .frm"
+  }
