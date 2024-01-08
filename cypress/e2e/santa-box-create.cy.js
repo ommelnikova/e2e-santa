@@ -19,8 +19,7 @@ describe("user can create a box and run it", () => {
   //пользователь 4 заполняет анкету
   //пользователь 1 логинится
   //пользователь 1 запускает жеребьевку
-    // let boxName;
-    let newBoxName = faker.word.noun({ length: { min: 5, max: 10 } });
+  let newBoxName = faker.word.noun({ length: { min: 5, max: 10 } });
   let wishes = faker.word.noun() + faker.word.adverb() + faker.word.adjective();
   let maxAmount = 50;
   let currency = "Евро";
@@ -33,19 +32,15 @@ describe("user can create a box and run it", () => {
     cy.contains("Создать коробку").should("be.visible"); // проверяем, что элемент отображается на странице
     cy.contains("Создать коробку").click();
     cy.wait(10000);
-    cy.get(boxPage.boxNameField).type(newBoxName).should("have.value", newBoxName);
     cy.get(boxPage.boxNameField)
-    .invoke("val", newBoxName) // сохраняем значение в переменную
-    .as("newBoxName"); // сохраняем значение в контекст Cypress
-      // .type(newBoxName)
-      // .should("have.value", newBoxName);
-    // cy.get(boxPage.boxNameField).invoke("text").then((text) => {
-    // boxName = text;
-    // });
+      .type(newBoxName)
+      .should("have.value", newBoxName);
+    cy.get(boxPage.boxNameField)
+      .invoke("val", newBoxName) // сохраняем значение в переменную
+      .as("newBoxName"); // сохраняем значение в контекст Cypress
     cy.get(generalElements.arrowRight).click();
     cy.wait(10000);
     cy.get(boxPage.sixthIcon).click();
-    // cy.wait(10000);
     cy.get(generalElements.arrowRight).click();
     cy.wait(10000);
     cy.get(boxPage.giftPriceToggle).check({ force: true });
@@ -55,7 +50,6 @@ describe("user can create a box and run it", () => {
     cy.get(boxPage.checkAddress).should("have.text", "Почтовый адрес");
     cy.get(boxPage.checkPhoneNumber).should("have.text", "Номер телефона");
     cy.get(generalElements.arrowRight).click();
-    // cy.get(generalElements.arrowRight).click();
     cy.get(dashboardPage.createdBoxName).should("have.text", `${newBoxName}`);
     cy.get(".layout-1__header-wrapper-fixed .toggle-menu-item span")
       .invoke("text")
@@ -64,12 +58,7 @@ describe("user can create a box and run it", () => {
         expect(text).to.include("Моя карточка");
         expect(text).to.include("Подопечный");
       });
-    // cy.get(
-    //   "#root > div.layout-1 > section.layout-1__header-wrapper-fixed > header > section > div > div > a:nth-child(1)"
-    // ).click();
-    // //cy.contains(newBoxName).should("be.visible");
-    // cy.contains(newBoxName, { timeout: 1000 }).click();
-  });
+      });
 
   it("add participants", () => {
     cy.get(generalElements.addParticipantsButton).click();
@@ -135,10 +124,12 @@ describe("user can create a box and run it", () => {
     ).click({ force: true });
     cy.get(".btn-main").click();
     cy.get(".santa-modal_content_buttons > .btn-main").click();
-    cy.get(".picture-notice__title").should("have.text", "Жеребьевка проведена");
+    cy.get(".picture-notice__title").should(
+      "have.text",
+      "Жеребьевка проведена"
+    );
     cy.clearCookies();
   });
-
 
   // after("delete box", () => {
   //   cy.visit("/login");
@@ -158,4 +149,4 @@ describe("user can create a box and run it", () => {
   //   );
   //   cy.get(".btn-service").click();
   // });
- });
+});
