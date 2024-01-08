@@ -114,22 +114,20 @@ describe("user can create a box and run it", () => {
         ).type(users[slicedKeys[i]].email);
       }
     });
-    cy.get(invitePage.inviteUserButton).click();
-    cy.wait(10000);
-    cy.get(
-      ".layout-1__header-wrapper-fixed > .layout-1__header-secondary > .header-secondary > .header-secondary__right-item > .toggle-menu-wrapper > .toggle-menu-button > .toggle-menu-button--inner"
+     cy.get(invitePage.inviteUserButton).click();
+     cy.wait(10000);
+     cy.get(".layout-1__header-wrapper-fixed > .layout-1__header-secondary > .header-secondary > .header-secondary__right-item > .toggle-menu-wrapper > .toggle-menu-button > .toggle-menu-button--inner"
     ).click();
-    cy.get(
-      ".layout-1__header-wrapper-fixed > .layout-1__header-secondary__menu > .header-secondary-menu > .organizer-menu > .organizer-menu__wrapper > :nth-child(2)"
+    cy.get(".layout-1__header-wrapper-fixed > .layout-1__header-secondary__menu > .header-secondary-menu > .organizer-menu > .organizer-menu__wrapper > :nth-child(2)"
     ).click({ force: true });
-    cy.get(".btn-main").click();
-    cy.get(".santa-modal_content_buttons > .btn-main").click();
-    cy.get(".picture-notice__title").should(
-      "have.text",
-      "Жеребьевка проведена"
-    );
-    cy.clearCookies();
-  });
+     cy.get(".btn-main").click();
+     cy.get(".santa-modal_content_buttons > .btn-main").click();
+     cy.get(".picture-notice__title").should(
+       "have.text",
+       "Жеребьевка проведена"
+     );
+     cy.clearCookies();
+   });
 
   // after("delete box", () => {
   //   cy.visit("/login");
