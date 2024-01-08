@@ -26,7 +26,7 @@ describe("user can create a box and run it", () => {
   let inviteLink;
   let newBoxId;
 
-  it.only("user logins and create a box", () => {
+  it("user logins and create a box", () => {
     cy.visit("/login");
     cy.login(users.userAutor.email, users.userAutor.password);
     cy.wait(5000); // добавляем задержку в 5 секунд для ожидания загрузки страницы
