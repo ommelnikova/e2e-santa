@@ -10,7 +10,7 @@ module.exports = defineConfig({
     testIsolation: false,
     setupNodeEvents(on, config) {
       const bundler = createBundler({
-        plugins: [createEsbuildPlugin(config)], // implement node event listeners here
+        plugins: [createEsbuildPlugin(config)], 
       });
       on("file:preprocessor", bundler);
       addCucumberPreprocessorPlugin(on, config);
@@ -19,3 +19,12 @@ module.exports = defineConfig({
     specPattern: "cypress/**/*.feature"
   },
 });
+// module.exports = defineConfig({
+//   e2e: {
+//     baseUrl: "https://santa-secret.ru",
+//     testIsolation: false,
+//     setupNodeEvents(on, config) {
+//       // implement node event listeners here
+//     },
+//   },
+// });

@@ -55,7 +55,7 @@ describe("user can create a box and run it", () => {
   cy.get(generalElements.arrowRight).click();
   cy.wait(3000);
   cy.get(boxPage.giftPriceToggle).check({ force: true });
-  cy.get(boxPage.maxAnount).type(maxAmount);
+  cy.get(boxPage.maxAmount).type(maxAmount);
   cy.get(boxPage.currency).select(currency);
   cy.get(generalElements.arrowRight).click();
   cy.wait(3000); 
@@ -75,7 +75,7 @@ describe("user can create a box and run it", () => {
       expect(text).to.include("Подопечный");
     });
 });
-it.only("add participants", () => {
+it("add participants", () => {
   cy.get(generalElements.addParticipantsButton).click();
   cy.get(invitePage.inviteLink)
     .invoke("text")
@@ -105,9 +105,9 @@ it("approve as user1", () => {
       const imageAvatar = faker.image.avatar();
       const imageElement = <img src={imageAvatar} alt="Random Image"/>;
       card.append(imageElement);
-    card.click();
+      card.trigger('click');
   } else {
-    card.click();//в другом случае просто кликаем на картинку
+    card.trigger('click');//в другом случае просто кликаем на картинку
   }
 });
   cy.get(generalElements.arrowRight).click();
@@ -139,7 +139,7 @@ it("add  user2 and user3", () => {
   cy.get(invitePage.sandingInvitation).check({ force: true });
   cy.get(".MuiGrid-container").then((container) => {
     const children = container.children();
-    const childrenArray = Array.from(children);
+    const childrenArray = Array.from(children); 
     const userKeys = Object.keys(users);
     const slicedKeys = userKeys.slice(2);
     for (let i = 0; i < childrenArray.length; i++) {

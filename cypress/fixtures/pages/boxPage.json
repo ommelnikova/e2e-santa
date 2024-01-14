@@ -11,7 +11,7 @@
     "phoneNumber": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > div.switch-panel__text > span.txt--med.txt",
     "checkBoxPhoneNumber": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
     "checkBoxNameParticipant": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(4) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
-    "maxAnount": ".MuiGrid-grid-xs-5 .frm",
+    "maxAmount": ".MuiGrid-grid-xs-5 .frm",
     "currency": ".MuiGrid-grid-xs-7 .frm",
     "boxIdField": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > input"
   }
