@@ -8,7 +8,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://santa-secret.ru",
     testIsolation: false,
-    setupNodeEvents(on, config) {
+    setupNodeEvents(on, config) { 
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)], 
       });
