@@ -12,7 +12,7 @@
     "cy:nokey:spec2": "cypress run --config-file cypress-24.config.js --spec 'cypress/e2e/tests/santaBox-create.feature'",
     "cy:nokey:sequential": "npm run cy:nokey:spec1 -- --browser chrome && npm run cy:nokey:spec2 -- --browser electron",
     "cy:nokey:parallel": "npm run cy:nokey:spec1 -- --browser chrome & npm run cy:nokey:spec2 -- --browser electron",
-    "cy:parallel": "npm run cy:spec1 -- --config-file cypress-13.config.js --browser chrome --group chrome --ci-build-id 10 --parallel & npm run cy:spec2 -- --config-file cypress-24.config.js  --browser electron --group electron --ci-build-id 10 --parallel"
+    "cy:parallel": "concurrently \"npm run cy:spec1 -- --config-file cypress-13.config.js --browser chrome --group chrome --ci-build-id 14 --parallel\" \"npm run cy:spec2 -- --config-file cypress-24.config.js  --browser electron --group electron --ci-build-id 14 --parallel\""
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "concurrently": "^8.2.2",
     "esbuild": "^0.19.11",
     "faker": "^6.6.6"
   }

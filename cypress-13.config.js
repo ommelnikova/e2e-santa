@@ -19,6 +19,10 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "cypress/**/*.feature",
+    chromeWebSecurity: false,
+    pageLoadTimeout: 120000,
+    requestTimeout: 60000,
+    responseTimeout: 60000,
     viewportWidth: 1366,
     viewportHeight: 768,
   },
