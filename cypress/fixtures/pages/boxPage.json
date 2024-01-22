@@ -1,7 +1,17 @@
 {
+  "firstTitle":"#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__header > span",  
+  "stepOne": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__footer > div.form-card__footer__step > span",
+  "selectCover":"#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__header > span",
   "boxNameField": ":nth-child(1) > .frm",
-  "sixthIcon": ":nth-child(6) > .picture_svg_wrapper",
-  "giftPriceToggle": "input",
-  "maxAnount": ".MuiGrid-grid-xs-5 .frm",
-  "currency": ".MuiGrid-grid-xs-7 .frm"
-}
+    "sixthIcon": ":nth-child(6) > .picture_svg_wrapper",
+    "giftPriceToggle": ".form-card__main input[type=checkbox]", 
+"checkBoxWishes":"#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(1) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
+    "Address":"#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(2) > div.switch-panel__text > span.txt--med.txt",
+    "checkBoxAddress": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(2) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
+    "phoneNumber": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > div.switch-panel__text > span.txt--med.txt",
+    "checkBoxPhoneNumber": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
+    "checkBoxNameParticipant": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(4) > div.switch-panel__toggle-wrap.switch-panel__toggle-wrap--center > div > label > input[type=checkbox]",
+    "maxAmount": ".MuiGrid-grid-xs-5 .frm",
+    "currency": ".MuiGrid-grid-xs-7 .frm",
+    "boxIdField": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__main > div:nth-child(3) > input"
+  }

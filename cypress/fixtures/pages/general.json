@@ -1,4 +1,5 @@
 {
-  "arrowRight": ".btn-arrow-right",
-  "submitButton": ".btn-main"
-}
+    "arrowRight": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main.layout-1__main--wide > section > div > div > div.form-card__footer > div.btn-main.btn-arrow-right.base--clickable",
+    "submitButton": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main > section > div > section > div > div.form-auth__button > div",
+    "addParticipantsButton": ".picture-notice__buttons"
+  }

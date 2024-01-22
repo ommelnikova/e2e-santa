@@ -1,15 +1,30 @@
 {
   "name": "e2e-santa",
   "version": "1.0.0",
-  "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:run:cloud": "cypress run --record --key 6b4def66-e2ae-4034-aa2e-95b0a5e22db1",
+    "cy:spec1": "cypress run --config-file cypress-13.config.js --spec 'cypress/e2e/tests/santaBox-create.copy.feature' --record --key 6b4def66-e2ae-4034-aa2e-95b0a5e22db1",
+    "cy:spec2": "cypress run --config-file cypress-24.config.js --spec 'cypress/e2e/tests/santaBox-create.feature' --record --key 6b4def66-e2ae-4034-aa2e-95b0a5e22db1",
+    "cy:sequential": "npm run cy:spec1 -- --browser chrome && npm run cy:spec2 -- --browser electron",
+    "cy:nokey:spec1": "cypress run --config-file cypress-13.config.js --spec 'cypress/e2e/tests/santaBox-create.copy.feature'",
+    "cy:nokey:spec2": "cypress run --config-file cypress-24.config.js --spec 'cypress/e2e/tests/santaBox-create.feature'",
+    "cy:nokey:sequential": "npm run cy:nokey:spec1 -- --browser chrome && npm run cy:nokey:spec2 -- --browser electron",
+    "cy:nokey:parallel": "npm run cy:nokey:spec1 -- --browser chrome & npm run cy:nokey:spec2 -- --browser electron",
+    "cy:parallel": "npm run cy:spec1 -- --config-file cypress-13.config.js --browser chrome --group chrome --ci-build-id 10 --parallel & npm run cy:spec2 -- --config-file cypress-24.config.js  --browser electron --group electron --ci-build-id 10 --parallel"
   },
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "cypress": "^12.2.0",
-    "@faker-js/faker": "^7.6.0"
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@faker-js/faker": "^8.3.1",
+    "cypress": "^13.6.1"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.19.11",
+    "faker": "^6.6.6"
   }
 }

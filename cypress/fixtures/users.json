@@ -1,22 +1,23 @@
 {
   "userAutor": {
-    "email": "ommelnikova+test@gmail.com",
-    "password": "test1234",
-    "name": "oksana-autor"
+    "email": "gromova_student@eicb.ru",
+    "password": "Qwerty123!",
+    "name": "gromova-student"
   },
   "user1": {
-    "email": "ommelnikova+test1@gmail.com",
-    "password": "test1234",
-    "name": "oksana1"
+    "email": "gromova_student+test1@eicb.ru",
+    "password": "Qwerty123!",
+    "name": "gromova-student1"
   },
   "user2": {
-    "email": "ommelnikova+test2@gmail.com",
-    "password": "test1234",
-    "name": "oksana2"
+    "email": "gromova_student+test2@eicb.ru",
+    "password": "Qwerty123!",
+    "name": "gromova-student2"
   },
   "user3": {
-    "email": "ommelnikova+test3@gmail.com",
-    "password": "test1234",
-    "name": "oksana3"
+    "email": "gromova_student+test3@eicb.ru",
+    "password": "Qwerty123!",
+    "name": "gromova-student3"
   }
 }
+

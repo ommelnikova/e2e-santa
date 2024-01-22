@@ -1,0 +1,4 @@
+{
+    "drawLotsButton": "#root > div.layout-1 > section.layout-1__main-wrapper > div.layout-1__main > section > div > section > div > div > div.heading > div.heading__right",
+     "confirmationButton": "#root > div.santa-modal.santa-modal--opened > div.santa-modal_content > div.santa-modal_content_buttons > div.btn-main.base--clickable"
+}
