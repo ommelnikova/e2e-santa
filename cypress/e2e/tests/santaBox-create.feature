@@ -1,33 +1,33 @@
 Feature: User logins, create a box and add participants on santa website
 
-Scenario: User logs and create box in sucessfully 
-Given user is on secret santa login page
-Given user logs in with table
-| login | password | 
-| gromova_student@eicb.ru | Qwerty123! |
-| gromova_student+test1@eicb.ru | Qwerty123! |
-| gromova_student+test2@eicb.ru | Qwerty123! |
-| gromova_student+test3@eicb.ru | Qwerty123! | 
-# Given user is on dashboard page
-# When title have text Come up with box name
-# When naming a box
-# When save new box id
-# When user is on cover selection page
-# When user select a cover box
-# When user is on gift price toggle page
-# When checkbox on
-# When user sets the max gift amount
-# When user select currency
-# When user is on advanced setting page
-# When select advanced setting on page
-# When user is on new box page
-# Then check name new box on the page
-# Then check title on the new box  page
-# Then user is on add participants page
-# Then copy link
-Then log out
+    Scenario: User logs and create box in sucessfully
+        Given user is on secret santa login page
+        Given user logs in with table
+            | login                         | password   |
+            | gromova_student@eicb.ru       | Qwerty123! |
+            | gromova_student+test1@eicb.ru | Qwerty123! |
+            | gromova_student+test2@eicb.ru | Qwerty123! |
+            | gromova_student+test3@eicb.ru | Qwerty123! |
+        # Given user is on dashboard page
+        # When title have text Come up with box name
+        # When naming a box
+        # When save new box id
+        # When user is on cover selection page
+        # When user select a cover box
+        # When user is on gift price toggle page
+        # When checkbox on
+        # When user sets the max gift amount
+        # When user select currency
+        # When user is on advanced setting page
+        # When select advanced setting on page
+        # When user is on new box page
+        # Then check name new box on the page
+        # Then check title on the new box  page
+        # Then user is on add participants page
+        # Then copy link
+        Then log out
 
-# Scenario: Add user through link. User1 goes by invition and fills out the form 
+# Scenario: Add user through link. User1 goes by invition and fills out the form
 # Given following a link
 # Given user logs through click on the create participant card button
 # Given user on login page
@@ -48,7 +48,7 @@ Then log out
 # Given user select avatar
 # Given user add street address, firstName, zipCode
 # Given user add wishes
-# Given participant card created 
+# Given participant card created
 # Given sign out
 
 # Scenario: User add user2 and user3 through drawing of lots

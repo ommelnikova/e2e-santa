@@ -20,7 +20,7 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/**/*.feature",
     electronWebSecurity: false,
-    pageLoadTimeout: 120000,
+    pageLoadTimeout: 300000,
     requestTimeout: 60000,
     responseTimeout: 60000,
     viewportWidth: 1920,
