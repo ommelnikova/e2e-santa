@@ -1,5 +1,6 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { faker } from "@faker-js/faker";
+import "@shelex/cypress-allure-plugin";
 const dashboardPage = require("../../fixtures/pages/dashboardPage.json");
 const users = require("../../fixtures/users.json");
 const boxPage = require("../../fixtures/pages/boxPage.json");

@@ -4,6 +4,8 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 const addCucumberPreprocessorPlugin =
   require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
+  const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
 
 module.exports = defineConfig({
   projectId: "f8rude",
@@ -16,6 +18,7 @@ module.exports = defineConfig({
       });
       on("file:preprocessor", bundler);
       addCucumberPreprocessorPlugin(on, config);
+      allureWriter(on, config);
       return config;
     },
     specPattern: "cypress/**/*.feature",
